@@ -27,8 +27,8 @@ using namespace std;
 
 int main(){
 	srand(time(nullptr));
-	myApp varianteA;
-	varianteA.varianteA();
+	myApp ObjektA;
+	ObjektA.varianteA();
 }
 
 
