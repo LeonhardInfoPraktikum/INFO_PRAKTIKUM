@@ -288,7 +288,6 @@ template<typename T>
 class Queue: protected List<T> {
 public:
 
-
 	/**
 	 *
 	 * \brief Adds a new element to the queue.
