@@ -21,15 +21,23 @@
 #include "TASK5.H"
 #include "TASK6.H"
 #include "myApp.h"
+#include "SIMPLESOCKET.H"
 
 using namespace std;
+using namespace my;
 
 
 int main(){
 	srand(time(nullptr));
+
 	myApp ObjektA;
 	ObjektA.varianteA();
+
+	//myServer ObjektB;
+	//ObjektB.run();
 }
+
+
 
 
 
