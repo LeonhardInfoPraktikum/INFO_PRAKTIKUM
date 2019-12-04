@@ -7,7 +7,10 @@
 
 #ifndef MYCLIENT_H_
 #define MYCLIENT_H_
+int main()
+{
 
+}
 
 
 
