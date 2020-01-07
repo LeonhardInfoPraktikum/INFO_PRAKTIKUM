@@ -14,31 +14,6 @@
 
 /**
  *
- * \namespace my
- *
- * \brief namespace für eigene Implementierung myApp
- *
- */
-namespace my {
-/**
- *
- * \class myServer
- *
- * \brief Klasse für Server; erbt TCPserver
- *
- */
-class myServer : public TCPserver {
-
-public:
-	myServer(int port, int maxDataSizeRecv);
-
-	string myResponse(string input);
-
-};
-
-
-/**
- *
  * \class myApp
  *
  * \brief Klasse für Implementierung der Funktionen zur Zerstörung der Schiffe
@@ -111,7 +86,6 @@ public:
 	}
 };
 
-} //namespace my
 
 
 #endif /* MYAPP_H_ */

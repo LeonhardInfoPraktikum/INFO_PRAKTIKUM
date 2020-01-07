@@ -32,22 +32,26 @@ TASK4.o:	TASK4.C
 
 TASK5.o:	TASK5.C
 	$(CC) -c $<  -std=c++11 
-
-
-myApp.o: myApp.c
+	
+myServer.o:	myServer.c
 	$(CC) -c $<  -std=c++11 
 
 main.o:	main.C
 	$(CC) -c $<  -std=c++11	
 
+myClient.o:	myClient.c
+	$(CC) -c $<  -std=c++11	
 
 
 main:	$(OBJS)
 	$(CC) -o $@ $^ -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11 -lpthread $(LIBS)
 	
 
-server:	server.o myApp.o
-	$(CC) -o server server.o SIMPLESOCKET.o myApp.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
+
+
+
+server:	server.o myServer.o TASK3.o
+	$(CC) -o server server.o myServer.o TASK3.o  SIMPLESOCKET.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
 
 client:	client.o
 	$(CC) -o client client.o SIMPLESOCKET.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11

@@ -1,23 +1,14 @@
 /*
- * myApp.c
+ * myServer.c
  *
- *  Created on: 27.11.2019
+ *  Created on: 07.01.2020
  *      Author: ubuntu
  */
 
-#include "myApp.h"
-#include <sstream>
 
-/**
- *
- * \namespace my
- *
- * \brief namespace für eigene Implementierung myApp
- *
- */
-namespace my {
+#include "myServer.h"
 
-myServer::myServer(int port, int maxDataSizeRecv) : TCPserver(port, maxDataSizeRecv){};
+
 
 string myServer::myResponse(string input){
 		std::stringstream ss;
@@ -44,6 +35,5 @@ string myServer::myResponse(string input){
 	}
 
 
-} //namespace my
 
 
