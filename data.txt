@@ -1,0 +1,23 @@
+Socket created
+localhost resolved to 127.0.0.1
+Connected
+99
+99
+99
+98
+99
+98
+98
+97
+96
+87
+99
+99
+94
+98
+99
+99
+97
+97
+97
+98

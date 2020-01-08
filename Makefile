@@ -47,7 +47,8 @@ main:	$(OBJS)
 	$(CC) -o $@ $^ -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11 -lpthread $(LIBS)
 	
 
-
+myClient:	myClient.o SIMPLESOCKET.o
+	$(CC) -o myClient myClient.o SIMPLESOCKET.o -L/usr/lib/x86_64-linux-gnu -ldl -lstdc++  -std=c++11
 
 
 server:	server.o myServer.o TASK3.o
@@ -64,7 +65,7 @@ doc:
 	
 	
 all:	$(DEMOTARGET)
-	make clean  && make main && make server && make client
+	make clean  && make main && make server && make client && make myClient
 
 run:	main	
 	./main
