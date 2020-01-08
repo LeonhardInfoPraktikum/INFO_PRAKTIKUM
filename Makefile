@@ -4,7 +4,7 @@ CFLAGS=$(shell kg-config --cflags opencv)
 LIBS=$(shell pkg-config --libs opencv) 
 
 OBJS= main.o TASK1.o TASK2.o TASK3.o TASK4.o TASK5.o SHA256.o SIMPLESOCKET.o
-DEMOTARGET=main server client
+DEMOTARGET=main server client myClient
 
 client.o:	client.C
 	$(CC) -c $<  -std=c++11
