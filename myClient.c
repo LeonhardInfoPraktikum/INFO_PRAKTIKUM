@@ -61,12 +61,12 @@ int main()
 
 	cout << "Durchlauf aller Felder:" << endl;
 
-	for(int i=0; i < 10000; i++){
+	for(int i=0; i < 1000; i++){
 		nmbShoots = varianteA(&c);
 		cout << nmbShoots << endl;
 	}
 	cout << "Zufällige Koordinaten:" << endl;
-	for(int i=0; i < 10000; i++){
+	for(int i=0; i < 1000; i++){
 		nmbShoots = varianteB(&c);
 		cout << nmbShoots << endl;
 	}
